@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Сайт на HTML5 от MSQRD.BY</title>
+
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+
+		<style type="text/css">
+/* обнуляем все элементы */
+			* 
+				{
+				margin:0;
+				padding:0;
+				outline:none;
+				}  
+				
+/* --- Общие стили --- */ 
+			
+			html 
+				{
+				font-size:75%;
+				height:100%;
+				} 
+			body 
+				{
+				font:normal 1em/1.3 arial, helvetica, sans-serif;
+				color:#333;height:100%;
+				background:#f0f0f0;
+				} 
+			a 
+				{
+				color:#2b82dc;
+				}
+			aside:hover a, footer:hover a, p:hover a 
+				{
+				color:#0E6994;
+				} 
+			a:hover 
+				{
+				text-decoration:none;
+				color:#0E6994;
+				} 
+			abbr 
+				{
+				border-bottom:1px dotted #2b82dc;
+				cursor:help;
+				} 
+			h1, h2, h3, h4, h5, h6 
+									{
+									font-weight:normal;
+									line-height:1;
+									margin:4px 0 12px;
+									padding:4px;
+									color:#2ca9e4;
+									} 
+			h1 
+				{
+				font-size:1.88em;
+				} 
+			h2 + a 
+					{
+					margin-bottom:10px;
+					}
+			li 
+				{
+				margin-bottom:10px;
+				}
+			p 
+				{
+				text-align:justify;
+				word-spacing:.1ex;
+				line-height:1.6;
+				padding-left:4px;
+				margin-bottom:1em;
+				} 
+			ul 
+				{
+				list-style:none;
+				} 
+			ol 
+				{
+				list-style-position:inside;
+				}
+			.video 
+					{
+					 margin: 0 auto; 
+					 text-align: center;
+					}
+			summary 
+					{
+					margin-left:1em;
+					font-weight:bold;
+					color: #2ca9e4;
+					}
+			form 
+				{
+				margin:1em;
+				padding:.5em;
+				}
+			input[id=contact_name]
+								{
+								padding-left:5px;
+								margin-left:53px;
+								}
+								
+			input[id=contact_email]
+								{
+								padding-left:5px;
+								margin-left:41px;
+								}
+			input[id=contact_phone]
+								{
+								padding-left:5px;
+								margin-left:26px;
+								}
+			input[type=submit] 
+								{
+								border-radius:10px;
+								color: #2ca9e4;
+								padding:0.5em;
+								margin-left:2em;
+								}
+			/* делаем семантические тэги - блочными */ 	
+			header, nav, section, article, aside, footer 
+														{
+														display:block;
+														position:relative;
+														} 
+														
+			/* выравниваем страницу по центру, делаем отступы и цвет фона */ 			
+			#main 
+				{
+				width:950px;
+				min-height:100%;
+				padding:0 24px;
+				margin:0 auto;
+				background:#fff;
+				} 
+				
+			/* пишем класс для шапки - header */ 			
+			.h 
+				{
+				overflow:hidden;
+				height:70px;
+				padding:35px 25px 0;
+				} 
+				
+			/* меню навигации */ 
+			nav 
+				{
+				width:100%;
+				height:32px;
+				background:#2ca9e4;
+				/* border-radius:20px;*/
+				} 
+			nav li 
+					{
+					float:left;
+					margin:8px 20px 2px;
+					} 
+			nav a 
+					{
+					font-weight:bold;
+					text-decoration:none;
+					color:#fff;
+					} 
+			nav a:hover 
+						{
+						text-decoration:underline;
+						color:#fff;
+						} 
+			
+			/* область основного контента */ 
+			section 
+					{
+					overflow:hidden;
+					}
+					
+			/* стиль для картинки */ 
+			.image 
+					{
+					width:100%;
+					margin:10px 0;
+					} 
+			figure {
+					padding: 10px; /* Поля вокруг */
+					display: block; /* Блочный элемент */
+					width: 550px; /* Ширина */
+					margin: 0 10px 10px 0; /* Отступы */
+					text-align: center; /* Выравнивание по центру */
+				   }
+			figcaption {
+						color: #2ca9e4; /* Цвет текста */
+						font-size:1.2em;
+					   }		
+			 mark {
+					background: #ffec82;
+					padding: 1px 3px;
+					border: 1px dashed #333;
+				   }
+			/* внутренняя область контента */ 
+			section section 
+							{
+							float:left;
+							width:640px;
+							} 
+							
+			/* правая часть */ 
+			aside 
+				{
+				overflow:hidden;
+				width:250px;
+				padding:0 30px;
+				} 
+				
+			/* нижняя часть - footer */ 
+			footer 
+					{
+					height:40px;
+					padding:25px 25px 0;
+					margin:20px 0 0;
+					border-top:1px solid #0E6994;
+					} 
+					
+			/* стили для выделения областей HTML */ 
+			.tag 
+				{
+				position:absolute;
+				right:6px;top:2px;
+				font-size:11px;
+				font-style:normal;
+				} 
+			header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover 
+																							{
+																							background:#FFC327;
+																							color:#fff;
+																							} 
+			section section:hover, section aside:hover 
+														{
+														background:#FFD25D;
+														} 
+			section article:hover 
+									{
+									background:#FFC327;
+									} 
+			article header:hover 
+									{
+									background:#FFD25D;
+									color:#777;
+									} 
+			section article .tag 
+								{
+								top:12px;
+								} 
+			article header .tag 
+								{
+								right:70px;
+								top:2px;
+								} 
+			aside .tag 
+						{
+						top:12px;
+						}
+		</style>
+	</head>
+	<body>
+		<div id="main"> <!-- Главный блок всей страницы (обертка) -->
+			
+			<!-- Тэг header  -->
+            <table>
+                <tr>
+                    <td>
+               
+						<img src="IMAGES/logoo.jpg" width="100">
+        </td>
+        <td>
+            <header class="h">
+				<h1>Portal News</h1>
+				<!--<i class="tag">&lt;header&gt;</i>-->	
+			</header> 
+        </td>
+        </tr>
+			</table>
+			<!-- Тэг nav -->
+			<nav>
+				<ul>
+					<li><a href="index5.html">Главная</a></li>
+					<li><a href="index4.html">Новости</a></li>
+					<li><a href="index3.html">Знаменитости</a></li>
+					<li><a href="index2.html">Реклама</a></li>
+					<li><a href="index1.html">Об авторах</a></li>
+					
+				</ul>
+				<!--<i class="tag">&lt;nav&gt;</i>-->
+			</nav>
+			
+			<!-- Тэг section для вставки изображения логотипа -->
+			<section>
+				<img class="image" src="img.jpg" alt="" />
+				<!--<i class="tag">&lt;section&gt;</i>-->
+			</section>
+			
+			<!-- Блок всего контента страницы -->
+			<section>
+			
+				<!-- Блок левой части контента страницы -->
+				<section>
+				
+					<!-- Первая статья контента-->
+					<article>
+						<header>
+							<h2>Украинские военные вновь обстреляли Запорожскую АЭС</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<p> Киевский режим не прекращает провокации с целью создания угрозы техногенной катастрофы на ЗАЭС, заявили в Минобороны России.
+                            В ведомстве сообщили, что в субботу ВСУ выпустили по атомной станции 11 крупнокалиберных снарядов.
+                            Утром в воскресенье военные Украины дважды обстреляли территорию ЗАЭС. За полчаса с 9:15 до 9:45 было выпущено 12 крупнокалиберных снарядов. Восемь из них разорвались между пятым энергоблоком и спецкорпусом №2, три – попали между четвертым и пятым энергоблоками и один – в крышу спецкорпуса №2. </p>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+					
+					<!-- Вторая статья контента -->
+					<article>
+						<header>
+							<h2>Тело гражданина Ирака нашли на белорусско-польской границе</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<p>Белорусский пограничный наряд обнаружил тело мигранта на белорусско-польской границе, сообщили в пресс-службе ГПК республики.
+                            Инцидент произошел в субботу. Тело мужчины неславянской внешности было найдено без теплой верхней одежды. При себе у погибшего обнаружены документы гражданина Ирака.</p>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+					
+					<!-- Третья статья контента -->
+					<article>
+						<header>
+							<h2>Вучич пояснил, почему Сербия отказалась от санкций против России</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<p>"Это наша политика, наше решение. Мы выдержали большое давление, тяжелое давление - 270 дней. ... теперь каждый день мне говорят, какой это большой ущерб для Сербии, что не ввела санкции", - заявил Вучич в эфире TV Prva.
+                            Он подчеркнул, что это "хорошо обдуманное решение, разумная политика", которая осуждает нападение на Украину, и тем самым поддерживает международное право.
+                            Вучич напомнил о событиях 1999 года, когда НАТО "грубо напали на другую страну, убивали людей, убивали детей и еще вводили санкции".</p>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+					<article>
+						<header>
+							<h2>Россия может предложить новые объекты в список наследия ЮНЕСКО</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+                        <p> Москва готовится предложить новые объекты для включения их в список Всемирного списка ЮНЕСКО, об этом заявил ответственный секретарь российской комиссии по делам ЮНЕСКО Григорий Орджоникидзе.
+                            По его словам, в настоящее время в предварительном перечне находится около 25 памятников культуры и природы, расположенных в разных частях страны: в частности, это национальный парк "Каталык" (Якутия), музей "Дивногор" (Воронеж), "Долина царей" (Республика Тыва).
+                            Орджоникидзе также заявил, что призывы организации не сотрудничать с российскими музеями являются русофобской риторикой и ни к чему не приведут.
+                            Он также напомнил, что в списке всемирного наследия ЮНЕСКО находится 31 российский объект. Представитель России пояснил, что исключение объектов из списка случается крайне редко - всего несколько за 50 лет действия Конвенции.</p>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+					<article>
+						<header>
+							<h2>Служение выпало на непростое время: Лукашенко поздравил Патриарха Кирилла</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<p>Глава Беларуси Александр Лукашенко поздравил Патриарха Московского и всея Руси Кирилла с днем рождения.
+                            "Ваше Архипастырское служение Русской православной церкви выпало на непростое для всей планеты время, когда особое значение обрели главные общечеловеческие ценности: готовность бороться за справедливое дело, защищать Родину, веру отцов и будущее детей", - говорится в тексте поздравлении, которое приводит пресс-служба белорусского лидера.
+                            По словам Лукашенко, на этом фоне высокий авторитет, мудрое слово и молитвенная помощь Патриарха являются для всех православных верующих незыблемым нравственным ориентиром, укрепляющим в сердце тысячелетние традиции христианства.
+                            Также президент Беларуси поблагодарил главу РПЦ за неустанные труды, которые дают народам силы поддерживать друг друга и сохранять духовное и культурное единство. Лукашенко пожелал Кириллу доброго здоровья и неиссякаемой энергии в служении на благо Церкви и всего православного мира.
+                            Напомним, что Патриарх Кирилл приезжал в Беларусь шесть раз, последний раз - в июне текущего года. Тогда визит Святейшего Патриарха Московского и всея Руси Кирилла в Беларусь был приурочен к празднованию 1030-летия установления православия на белорусских землях.</p>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+                    <article>
+						<header>
+							<h2>Самые свежие новости только у нас!</h2>
+							<!--<i class="tag">&lt;header&gt;</i>-->
+						</header>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+						<!--<i class="tag">&lt;section&gt;</i>-->
+				</section> <!-- Нижняя граница левой части контента -->
+				
+				<!-- Тэг правой колонки контента -->
+				<aside>
+					<h2><a href="/service/">Полезные ссылки</a></h2>
+					<ul>
+						<li>
+						<h3><a href="/">Мы в вк</a></h3> 
+						</li>
+						<li><h3><a href="/">Для тех у кого не открылось https://vk.com/Portal_paige</a></h3>
+						</li>
+						<li>
+						<h3><a href="/">Мы в ютубе</a></h3>
+						</li>
+						<li>
+							<h3><a href="/">https://www.youtube.com/c/Portal news</a></h3>
+						</li>
+						<li>
+						<h3><a href="/">Мы в твиттере</a></h3>
+						</li>
+						<li>
+							<h3><a href="/">https://twitter.com/Portal_news</a></h3>
+							</li>
+					</ul>
+					<br />
+					<h2>Самые новые статьи</h2>
+						<ol>
+							<li><a href="name file news">"Гомсельмаш" станет первым совместным проектом по импортозамещению</a></li>
+							<li><a href="name file news">Челябинская область заинтересовалась "импортозамещенной" техникой из Беларуси</a></li>
+							<li><a href="name file news">Мингаз рассказал, чего ожидать от общего рынка газа с Россией</a></li>
+							<li><a href="name file news">Россия остается главным инвестором Беларуси</a></li>
+							<li><a href="name file news">В Беларуси появилась карта Nova. Ищем тех, кому она подходит лучше всего</a></li>							</li>
+							<li><a href="name file news">Карточки некоторых банков могут не работать в ночь на 19 ноября</a></li>
+					</ol>
+					<!--<i class="tag">&lt;aside&gt;</i>-->
+				</aside>
+				<!--<i class="tag">&lt;section&gt;</i>-->
+			</section> <!-- Нижняя граница контента -->
+			
+			<!-- Авторская часть страницы footer -->
+			<footer>
+				Copyright &copy; 2022 <a href="/" rel="copyright">Web-Makers</a>. All rights reserved. 
+				<!--<i class="tag">&lt;footer&gt;</i>-->
+			</footer>
+		</div> <!-- Границы главного блока (обертки) страницы -->
+	</body>
+</html>

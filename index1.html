@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Portal News</title>
+​
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+​
+		<style type="text/css">
+/* обнуляем все элементы */
+			* 
+				{
+				margin:0;
+				padding:0;
+				outline:none;
+				}  
+				
+/* --- Общие стили --- */ 
+			
+			html 
+				{
+				font-size:75%;
+				height:100%;
+				} 
+			body 
+				{
+				font:normal 1em/1.3 arial, helvetica, sans-serif;
+				color:#333;height:100%;
+				background:#f0f0f0;
+				} 
+			a 
+				{
+				color:#2b82dc;
+				}
+			aside:hover a, footer:hover a, p:hover a 
+				{
+				color:#0E6994;
+				} 
+			a:hover 
+				{
+				text-decoration:none;
+				color:#0E6994;
+				} 
+			abbr 
+				{
+				border-bottom:1px dotted #2b82dc;
+				cursor:help;
+				} 
+			h1, h2, h3, h4, h5, h6 
+									{
+									font-weight:normal;
+									line-height:1;
+									margin:4px 0 12px;
+									padding:4px;
+									color:#2ca9e4;
+									} 
+			h1 
+				{
+				font-size:1.88em;
+				} 
+			h2 + a 
+					{
+					margin-bottom:10px;
+					}
+			li 
+				{
+				margin-bottom:10px;
+				}
+			p 
+				{
+				text-align:justify;
+				word-spacing:.1ex;
+				line-height:1.6;
+				padding-left:4px;
+				margin-bottom:1em;
+				} 
+			ul 
+				{
+				list-style:none;
+				} 
+			ol 
+				{
+				list-style-position:inside;
+				}
+			.video 
+					{
+					 margin: 0 auto; 
+					 text-align: center;
+					}
+			summary 
+					{
+					margin-left:1em;
+					font-weight:bold;
+					color: #2ca9e4;
+					}
+			form 
+				{
+				margin:1em;
+				padding:.5em;
+				}
+			input[id=contact_name]
+								{
+								padding-left:5px;
+								margin-left:53px;
+								}
+								
+			input[id=contact_email]
+								{
+								padding-left:5px;
+								margin-left:41px;
+								}
+			input[id=contact_phone]
+								{
+								padding-left:5px;
+								margin-left:26px;
+								}
+			input[type=submit] 
+								{
+								border-radius:10px;
+								color: #2ca9e4;
+								padding:0.5em;
+								margin-left:2em;
+								}
+			/* делаем семантические тэги - блочными */ 	
+			header, nav, section, article, aside, footer 
+														{
+														display:block;
+														position:relative;
+														} 
+														
+			/* выравниваем страницу по центру, делаем отступы и цвет фона */ 			
+			#main 
+				{
+				width:950px;
+				min-height:100%;
+				padding:0 24px;
+				margin:0 auto;
+				background:#fff;
+				} 
+				
+			/* пишем класс для шапки - header */ 			
+			.h 
+				{
+				overflow:hidden;
+				height:70px;
+				padding:35px 25px 0;
+				} 
+				
+			/* меню навигации */ 
+			nav 
+				{
+				width:100%;
+				height:32px;
+				background:#2ca9e4;
+				/* border-radius:20px;*/
+				} 
+			nav li 
+					{
+					float:left;
+					margin:8px 20px 2px;
+					} 
+			nav a 
+					{
+					font-weight:bold;
+					text-decoration:none;
+					color:#fff;
+					} 
+			nav a:hover 
+						{
+						text-decoration:underline;
+						color:#fff;
+						} 
+			
+			/* область основного контента */ 
+			section 
+					{
+					overflow:hidden;
+					}
+					
+			/* стиль для картинки */ 
+			.image 
+					{
+					width:100%;
+					margin:10px 0;
+					} 
+			figure {
+					padding: 10px; /* Поля вокруг */
+					display: block; /* Блочный элемент */
+					width: 550px; /* Ширина */
+					margin: 0 10px 10px 0; /* Отступы */
+					text-align: center; /* Выравнивание по центру */
+				   }
+			figcaption {
+						color: #2ca9e4; /* Цвет текста */
+						font-size:1.2em;
+					   }		
+			 mark {
+					background: #ffec82;
+					padding: 1px 3px;
+					border: 1px dashed #333;
+				   }
+			/* внутренняя область контента */ 
+			section section 
+							{
+							float:left;
+							width:640px;
+							} 
+							
+			/* правая часть */ 
+			aside 
+				{
+				overflow:hidden;
+				width:250px;
+				padding:0 30px;
+				} 
+				
+			/* нижняя часть - footer */ 
+			footer 
+					{
+					height:40px;
+					padding:25px 25px 0;
+					margin:20px 0 0;
+					border-top:1px solid #0E6994;
+					} 
+					
+			/* стили для выделения областей HTML */ 
+			.tag 
+				{
+				position:absolute;
+				right:6px;top:2px;
+				font-size:11px;
+				font-style:normal;
+				} 
+			header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover 
+																							{
+																							background:#FFC327;
+																							color:#fff;
+																							} 
+			section section:hover, section aside:hover 
+														{
+														background:#FFD25D;
+														} 
+			section article:hover 
+									{
+									background:#FFC327;
+									} 
+			article header:hover 
+									{
+									background:#FFD25D;
+									color:#777;
+									} 
+			section article .tag 
+								{
+								top:12px;
+								} 
+			article header .tag 
+								{
+								right:70px;
+								top:2px;
+								} 
+			aside .tag 
+						{
+						top:12px;
+						}
+          
+   .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 35px 7px 7px; /* Отступы вокруг картинки */
+   }
+		</style>
+	</head>
+		<div id="main"> <!-- Главный блок всей страницы (обертка) -->
+			
+			<!-- Тэг header  -->
+            <table>
+                <tr>
+                    <td>
+               
+						<img src="IMAGES/logoo.jpg" width="100">
+        </td>
+        <td>
+					<img><h1>Portal News</h1>
+			</div>	
+			</header> 
+        </td>
+        </tr>
+			</table>
+			<!-- Тэг nav -->
+			<nav>
+				<ul>
+					<li><a href="index5.html">Главная</a></li>
+					<li><a href="index4.html">Новости</a></li>
+					<li><a href="index3.html">Знаменитости</a></li>
+					<li><a href="index2.html">Реклама</a></li>
+					<li><a href="index1.html">Об авторах</a></li>
+					
+				</ul>
+				<!--<i class="tag">&lt;nav&gt;</i>-->
+			</nav>
+			
+			<!-- Тэг section для вставки изображения логотипа -->
+			<section>
+				<img class="image" src="img.jpg" alt="" />
+				<!--<i class="tag">&lt;section&gt;</i>-->
+			</section>
+			
+			<!-- Блок всего контента страницы -->
+			<section>
+			
+				<!-- Блок левой части контента страницы -->
+				<section>
+				
+					<!-- Первая статья контента-->
+					<article>
+						<header>
+							<h1 > Авторы:</h1>
+                            <ul>
+                                <li>Дронь Глеб Борисович:<a href="tel:+375333873587">+375333873587</a></li>
+                                <li>Наумович Артём Сергеевич:<a href="tel:+375299621381">+375299621381</a></li>
+                                <li>Курочка Арина Александровна:<a href="tel:+375339030736">+375339030736</a></li>
+                                <li>Якович Дмитрий Иванович:<a href="tel:+375296102332">+375296102332</a></li>
+                                <li>Зыль Анастасия Дмитриевна:<a href="tel:+375445829324">+375445829324</a></li>
+                            </ul>
+                            <img src="IMAGES/we.jpg" width="700">
+						</header>
+						<!--<i class="tag">&lt;article&gt;</i>-->
+					</article>
+					
+						<!--<i class="tag">&lt;section&gt;</i>-->
+				</section> <!-- Нижняя граница левой части контента -->
+				
+				<!-- Тэг правой колонки контента -->
+				<aside>
+					<h2><a href="/service/">Полезные ссылки</a></h2>
+					<ul>
+						<li>
+						<h3><a href="/">Мы в вк</a></h3> 
+						</li>
+						<li><h3><a href="/">Для тех у кого не открылось https://vk.com/Portal_paige</a></h3>
+						</li>
+						<li>
+						<h3><a href="/">Мы в ютубе</a></h3>
+						</li>
+						<li>
+							<h3><a href="/">https://www.youtube.com/c/Portal news</a></h3>
+						</li>
+						<li>
+						<h3><a href="/">Мы в твиттере</a></h3>
+						</li>
+						<li>
+							<h3><a href="/">https://twitter.com/Portal_news</a></h3>
+							</li>
+					</ul>
+					<br />
+					<h2>Самые новые статьи</h2>
+						<ol>
+							<li><a href="name file news">"Гомсельмаш" станет первым совместным проектом по импортозамещению</a></li>
+							<li><a href="name file news">Челябинская область заинтересовалась "импортозамещенной" техникой из Беларуси</a></li>
+							<li><a href="name file news">Мингаз рассказал, чего ожидать от общего рынка газа с Россией</a></li>
+							<li><a href="name file news">Россия остается главным инвестором Беларуси</a></li>
+							<li><a href="name file news">В Беларуси появилась карта Nova. Ищем тех, кому она подходит лучше всего</a></li>							</li>
+							<li><a href="name file news">Карточки некоторых банков могут не работать в ночь на 19 ноября</a></li>
+					</ol>
+					<!--<i class="tag">&lt;aside&gt;</i>-->
+				</aside>
+				<!--<i class="tag">&lt;section&gt;</i>-->
+			</section> <!-- Нижняя граница контента -->
+			
+			<!-- Авторская часть страницы footer -->
+			<footer>
+				Copyright &copy; 2022 <a href="/" rel="copyright">Web-Makers</a>. All rights reserved. 
+				<!--<i class="tag">&lt;footer&gt;</i>-->
+			</footer>
+		</div> <!-- Границы главного блока (обертки) страницы -->
+	</body>
+</html>
